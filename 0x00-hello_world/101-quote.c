@@ -3,7 +3,7 @@
 /**
  * main- Entry point
  *
- * Description: A program that print statment stander 
+ * Description: A program that print statment 
  *
  * Return: Always 1 (success)
  */
