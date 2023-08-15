@@ -8,10 +8,10 @@
 int main(void)
 {
 	char str[] = "_putchar";
-	int i;
+	int ch;
 
-	for (i = 0; i <= 8; i++)
-		_putchar(str[i]);
+	for (ch = 0; ch <= 8; ch++)
+		_putchar(str[ch]);
 	 _putchar('\n');
 	return (0);
 }
