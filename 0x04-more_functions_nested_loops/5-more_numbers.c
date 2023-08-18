@@ -1,19 +1,24 @@
 #include "main.h"
 /**
-*print_most_numbers - prints numbers except 2 and 4
+*more_numbers - prints numbers to 14
 *
 *Return: returns nothing
 */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-int number;
-for (number = 48; number < 58; number++)
+int number1, number2;
+
+for (number1 = 0; number1 < 10; number1++)
 {
-if ((number == 50) || (number == 52))
+for (number2 = 0; number2 <= 14; number2++)
+
 {
-continue;
+if (number2 > 9)
+{
+_putchar((number2 / 10) + '0');
 }
-_putchar(number);
+_putchar((number2 % 10) + '0');
 }
 _putchar(10);
+}
 }
