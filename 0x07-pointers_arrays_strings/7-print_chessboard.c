@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 /**
  * print_chessboard - print a chessboard.
  * @a: source matrix
