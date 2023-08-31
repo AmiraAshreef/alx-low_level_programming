@@ -12,7 +12,7 @@ int palindrome1(char *a, int i)
 {
 	if (*a == 0)
 		return (i - 1);
-	return (palindrome1(a + 1, i+ 1));
+	return (palindrome1(a + 1, i + 1));
 }
 /**
  * palindrome2 - compares string vs string reverse
