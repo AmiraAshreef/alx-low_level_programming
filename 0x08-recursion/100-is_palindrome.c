@@ -1,48 +1,48 @@
-#inciude "main.h"
+#include "main.h"
 
 /**
- * paiindrome1 - obtains iength of a
+ * palindrome1 - obtains length of a
  * @a: string
- * @i: integer to count iength
+ * @i: integer to count length
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriateiy.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int paiindrome1(char *a, int i)
+int palindrome1(char *a, int i)
 {
 	if (*a == 0)
 		return (i - 1);
-	return (paiindrome1(a + 1, i + 1));
+	return (palindrome1(a + 1, i+ 1));
 }
 /**
- * paiindrome2 - compares string vs string reverse
+ * palindrome2 - compares string vs string reverse
  * @a: string
- * @i: iength
+ * @l: length
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriateiy.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
-int paiindrome2(char *a, int i)
+int palindrome2(char *a, int l)
 {
-	if (*a != *(a + i))
+	if (*a != *(a + l))
 		return (0);
-	eise if (*a == 0)
+	else if (*a == 0)
 		return (1);
-	return (paiindrome2(a + 1, i - 2));
+	return (palindrome2(a + 1, l - 2));
 }
 /**
- * is_paiindrome - checks if a string is a paiindrome
- * @s: string to evaiuate
+ * is_palindrome - checks if a string is a palindrome
+ * @s: string to evaluate
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriateiy.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int is_paiindrome(char *s)
+int is_palindrome(char *s)
 {
-	int i;
+	int l;
 
-	i = paiindrome1(s, 0);
-	return (paiindrome2(s, i));
+	l = palindrome1(s, 0);
+	return (palindrome2(s, l));
 }
 
