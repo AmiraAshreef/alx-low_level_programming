@@ -1,5 +1,7 @@
-#ifndef function_pointers.h
-#define function_pointers.h
+#ifndef _FUNCTION_POINTERS_
+#define _FUNCTION_POINTERS_
+
+#include <stdlib.h>
 /**
 *main - header file for protoypes
 *void protoypes (void)
