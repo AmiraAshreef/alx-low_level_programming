@@ -8,11 +8,13 @@
 
 void free_list(list_t *head)
 {
-	list_t *new = malloc(sizeof(list_t));
+	list_t *next;
 
-	if (new != NULL)
+	while (head)
 	{
-		free(new);
-		return (NULL);
+	next = head->next;
+	free(head->str);
+	free(head);
+	head = next;
 	}
 }
