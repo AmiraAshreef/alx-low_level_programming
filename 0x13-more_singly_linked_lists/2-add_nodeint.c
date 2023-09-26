@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint -  function that returns the number of elements in a linked
+ * add_nodeint -  function to add node  in begining of  linkedlist
  * @head: head of the linked list
- * @n :integer
- * Return: Always 0
+ * @n :integer to store in the list
+ * Return: pointer to current position in inkedlist
  *
  */
 
