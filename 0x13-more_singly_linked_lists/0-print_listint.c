@@ -12,7 +12,7 @@
 size_t print_listint(const listint_t *h)
 {
 
-	size_t	i, n, *next;
+	size_t	i;
 
 	if (h == NULL)
 	{
