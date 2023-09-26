@@ -14,12 +14,6 @@ size_t print_listint(const listint_t *h)
 
 	size_t	i;
 
-	if (h == NULL)
-	{
-
-	printf(" No elements ");
-	exit(0);
-	}
 	for (i = 0; h != NULL ; ++i)
 	{
 
