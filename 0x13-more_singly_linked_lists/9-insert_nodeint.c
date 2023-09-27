@@ -1,17 +1,16 @@
 #include "lists.h"
 
+
 /**
- * insert_nodeint_at_index - Inserts a new node to list
+ * insert_nodeint_at_index - inserts a new node in a linked list,
+ * at a given position
+ * @head: pointer to the first node in the list
+ * @idx: index where the new node is added
+ * @n: data to insert in the new node
  *
- * @head: A pointer to the address of the
- *        head of the  list.
- * @idx: The index of the  list where the new
- *       node should be added
- * @n: The integer for the new node to contain.
- *
- * Return: If the function fails - NULL.
- *         alse - the address of the new node.
+ * Return: pointer to the new node, or NULL
  */
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node, *fake = *head;
