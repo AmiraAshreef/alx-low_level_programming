@@ -20,7 +20,7 @@ listint_t *find_listint_loop(listint_t *head)
 
 	while (h)
 	{
-		if (t == hare)
+		if (t == h)
 		{
 			t = head;
 
