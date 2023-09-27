@@ -7,14 +7,12 @@
  */
 void free_listint(listint_t *head)
 {
-	struct listint_s *free_node;
+	listint_t *tmp;
 
-	free_node = head;
-
-	if (free_node != NULL)
+	while (head)
 	{
-	head = head->next;
-	free(free_node->next);
-	free(free_node);
+		tmp = head->next;
+		free(head);
+		head = tmp;
 	}
 }
