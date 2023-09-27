@@ -5,21 +5,21 @@
  * add_nodeint -  function to add node  in begining of  linkedlist
  * @head: head of the linked list
  * @n :integer to store in the list
- * Return: pointer to current position in inkedlist
- *
+ * Return: If the function fails - NULL.
+ *         Otherwise - the address of the new element.
  */
-
 listint_t *add_nodeint(listint_t **head, const int n)
 {
+	listint_t *new1;
 
-	listint_t *new_node;
-
-	new_node = *head;
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
+	new1 = malloc(sizeof(listint_t));
+	if (new1 == NULL)
 		return (NULL);
-	new_node->n = n;
-	new_node->next = *head;
-	*head = new_node;
-	return (*new_node);
+
+	new1->n = n;
+	new1->next = *head;
+
+	*head = new1;
+
+	return (new1);
 }
