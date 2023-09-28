@@ -61,7 +61,7 @@ size_t free_listint_safe(listint_t **h)
 		return (0);
 
 	i = find_listint(*h);
-	for (len = 0; (*h != i || i) && *h != NULL; *h = next)
+	for (len = 0; (*h != loop || i) && *h != NULL; *h = next)
 	{
 		len++;
 		next = (*h)->next;
