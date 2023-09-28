@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 
 /**
  * binary_to_uint - function to converts a binary number to an
@@ -12,9 +12,10 @@
 
 unsigned int binary_to_uint (const char *b)
 {
-	unsigned int y = 1, x = 0;
+	unsigned int y = 1,  x = 0;
 
 	int i;
+
 	unsigned int len;
 
 	len = strlen(b);
