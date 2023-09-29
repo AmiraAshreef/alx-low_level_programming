@@ -12,9 +12,9 @@
 
 unsigned int binary_to_uint (const char *b)
 {
-	unsigned int   x = 0;
+	unsigned int   x ;
 
-	int i;
+	unsigned int i;
 
 	if (b == NULL)
 	return (0);
