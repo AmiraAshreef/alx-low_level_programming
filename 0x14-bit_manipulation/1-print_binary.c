@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *
- * print_binary - prints decimal as binary
+ *print_binary - prints decimal as binary
  * @n: long integer
  *
  *Return: binary number , or 0.
