@@ -14,7 +14,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	int XOR = n ^ m;
 	int c = 0;
 
-	while (XOR)
+	while (XOR > 0)
 	{
 	XOR = XOR & (XOR - 1);
 	c++;
