@@ -11,8 +11,8 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int XOR = n ^ m;
-	int c = 0;
+	unsigned long int XOR = n ^ m;
+	unsigned long int c = 0;
 
 	for (c = 0; XOR > 0; c++)
 	{
