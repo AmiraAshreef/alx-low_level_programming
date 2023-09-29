@@ -8,11 +8,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int x;
 
 	if (n > 1)
 		print_binary(n >> 1);
-		x = ((n & 1) + '0');
 
-	putchar(x);
+	_putchar((n & 1) + '0');
 }
