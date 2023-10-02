@@ -9,9 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-int orgin_file, copy_file;
-int z  = 1024, n = 0;
-char buffer[1024];
+	int orgin_file, copy_file;
+	int z  = 1024, n = 0;
+	char buffer[1024];
 
 	if (argc != 3)
 	dprintf(STDERR_FILENO, "Usage: cp orgin_file copy_file\n"), exit(97);
