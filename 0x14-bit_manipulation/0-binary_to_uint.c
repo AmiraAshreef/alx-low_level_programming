@@ -7,7 +7,8 @@
  *
  * Return: unsigned int.
  */
-unsigned int binary_to_resultnt(const char *b)
+
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result;
 	int len, base_two;
