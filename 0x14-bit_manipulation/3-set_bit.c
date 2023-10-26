@@ -8,18 +8,15 @@
  *
  * Return: 1 if it worked, -1 if it didn't.
  */
-
 int set_bit(unsigned long int *n, unsigned int index)
 {
+	unsigned int m;
 
-	if (n == NULL || index >= sizeof(*n) * 8)
-	{
+	if (index > 63)
 		return (-1);
-	}
 
-	unsigned long int mask = 1UL << index;
-
-	*n |= mask;
+	m = 1 << index;
+	*n = (*n | m);
 
 	return (1);
 }
