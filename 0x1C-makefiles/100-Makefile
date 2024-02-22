@@ -1,0 +1,34 @@
+# Variables
+CC := gcc
+SRC := $(wildcard *.c)
+NAME := school
+RM := rm -f
+
+# Implicit rule for object files
+.c.o: m.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Target rules
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
+
+clean:
+	$(RM) $(NAME) *.o *~ *.swp
+
+fclean: clean
+	$(RM) $(SRC)
+
+oclean:
+	$(RM) *.o
+
+re: clean all
+
+# Ensure m.h exists before compile
+.PHONY: all clean fclean oclean re
+
+m.h:
+	@echo "Error: Header file 'm.h' is missing." >&2
+	@exit 1
+
